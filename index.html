@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WEATHER APP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      body {
+        background: #f8f9fa;
+      }
+      .card {
+        border-radius: 1rem;
+      }
+      .table-responsive {
+        overflow-x: auto;
+      }
+    </style>
+  </head>
+  <body>
+   <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg bg-light shadow-sm">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="#">🌤️ WEATHER</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <!-- Search aligned to right -->
+          <form id="searchForm" class="d-flex ms-auto" role="search">
+            <input id="searchInput" class="form-control me-2" type="search" placeholder="Search City" aria-label="Search"/>
+            <button class="btn btn-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+   </nav>
+
+   <!-- Main container -->
+   <div class="container mt-5">
+      <h1 id="mainHeading" class="my-5 text-center fw-bold">Search the City</h1>
+
+      <!-- Weather cards -->
+      <div class="row justify-content-center g-4 mb-5 text-center">
+        <div class="col-md-4 col-sm-6">
+          <div id="card1" class="card shadow-sm">
+            <div class="card-header bg-primary text-white">
+              <h4 class="my-0">City Weather</h4>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title" id="city1">---</h5>
+              <p id="weather1">Search to see weather</p>
+            </div>
+          </div>
+        </div>
+        <!-- you can add more cards here if needed -->
+      </div>
+
+      <!-- Footer Section -->
+      <footer class="pt-4 border-top">
+        <h2 class="text-center mb-4">Weather of Common Places</h2>
+        <div class="table-responsive">
+          <table class="table table-hover align-middle">
+            <thead class="table-light">
+              <tr>
+                <th>City</th>
+                <th>Temperature (°C)</th>
+                <th>Weather</th>
+                <th>Humidity</th>
+                <th>Location</th>
+                <th>Wind (kph)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>New Delhi</td><td>32°C</td><td>Sunny</td><td>30%</td><td>India</td><td>12</td>
+              </tr>
+              <tr>
+                <td>Mumbai</td><td>28°C</td><td>Cloudy</td><td>60%</td><td>India</td><td>10</td>
+              </tr>
+              <tr>
+                <td>Kolkata</td><td>30°C</td><td>Partly Cloudy</td><td>55%</td><td>India</td><td>14</td>
+              </tr>
+              <tr>
+                <td>Bangalore</td><td>24°C</td><td>Rain</td><td>70%</td><td>India</td><td>20</td>
+              </tr>
+              <tr>
+                <td>Chennai</td><td>31°C</td><td>Humid</td><td>80%</td><td>India</td><td>15</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </footer>
+   </div>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="script.js"></script>
+  </body>
+</html>
